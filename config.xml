@@ -4,14 +4,19 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<name>PhoneGap Build Application</name>
+<name>Fractal</name>
 
 <description>
-A simple PhoneGap Build application.
+Aplicacion Mobil del Sistema de RRHH FRACTAL
 </description>
 
 <author href="https://example.com" email="you@example.com">
-Your Name
+Luis Altamirano
 </author>
-
+  <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
 </widget>

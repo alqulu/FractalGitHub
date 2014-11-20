@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style>
+.btnResponsive {
+	 margin-left:4px;
+	 
+  width:80%;
+  height:30px;
+}
+.btnResponsive .linea{
+	margin-top:2%;
+	margin-left:4%;
+	width:70%;
+	height:6px;
+	background-color:white;
+	border-radius:10px;
+	}
+</style>
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Demo Menu</title>
+    </head>
+    <body>
+		<div id="menuprincipal">
+			<div id="wrapperMenu">
+				<div class="scroller">
+					<div id="contenidoMenu"></div>
+				</div>
+			</div>
+	</div>
+    	<div id="cuerpo">
+	        <div id="header"><a href="javascript:menu('menu');"><div class="btn"><div class="btnResponsive"><div class="linea"></div><br><div class="linea"></div><div class="linea"></div></div></div></a><!--<img class="logo" src="img/logo.png" />!--><div style="font-size:20px">fractal</div></div>
+			<div id="wrapper">
+				<div class="scroller">
+					<div id="contenidoCuerpo"></div>
+				</div>
+			</div>
+		</div>
+    <script type="text/javascript" src="js/cordova.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
