@@ -126,6 +126,7 @@ var m_window_removeEventListener = window.removeEventListener;
 var documentEventHandlers = {},
     windowEventHandlers = {};
 
+
 document.addEventListener = function(evt, handler, capture) {
     var e = evt.toLowerCase();
     if (typeof documentEventHandlers[e] != 'undefined') {
@@ -1411,6 +1412,7 @@ var CompassHeading = function(magneticHeading, trueHeading, headingAccuracy, tim
   this.headingAccuracy = headingAccuracy;
   this.timestamp = timestamp || new Date().getTime();
 };
+
 
 module.exports = CompassHeading;
 

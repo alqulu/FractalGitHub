@@ -2,7 +2,8 @@
 var myScroll, myScrollMenu, cuerpo, menuprincipal, wrapper, estado;
 
 // Guardamos en variables elementos para poder rescatarlos despuŽs sin tener que volver a buscarlos
-cuerpo = document.getElementById("cuerpo"),
+ 
+cuerpo = document.getElementById("cuerpo"), 
 menuprincipal = document.getElementById("menuprincipal"),
 wrapper = document.getElementById("wrapper");
 
@@ -89,6 +90,8 @@ function menu(opcion){
 	}else{
 		
 		// A–adimos la clase al li presionado
+		
+		removeClass('move-right',document.getElementById("idoffCanvas"));
 		addClass('li-menu-activo' , document.getElementById("ulMenu").getElementsByTagName("li")[opcion]);
 		
 		// Recogemos mediante ajax el contenido del html segœn la opci—n clickeada en el menu
@@ -108,7 +111,8 @@ function menu(opcion){
 		setTimeout(function() {
 			removeClass('li-menu-activo' , document.getElementById("ulMenu").getElementsByTagName("li")[opcion]);
 		}, 300);
-		 
+	
+	 $('#sliderEmpleado').bxSlider();
 	 }
 
 }
