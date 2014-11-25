@@ -1,0 +1,52 @@
+  
+  
+
+.collapse-container>:nth-child(odd) {
+	padding: 5px;
+    background-color: gray;
+    background-image: linear-gradient(bottom, gray 14%, #969696 70%);
+    background-image: -o-linear-gradient(bottom, gray 14%, #969696 70%);
+    background-image: -moz-linear-gradient(bottom, gray 14%, #969696 70%);
+    background-image: -webkit-linear-gradient(bottom, gray 14%, #969696 70%);
+    background-image: -ms-linear-gradient(bottom, gray 14%, #969696 70%);
+    border: 1px solid black;
+    margin: auto;
+}
+.collapse-container>:nth-child(even) {
+	background-color: white;
+	display: none;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+.collapse-container>:nth-child(even) p {
+    padding: 0px 5px;
+}
+
+.collapse-container>:nth-child(odd):hover {
+	cursor: pointer;
+	-moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit browsers */
+}
+
+.collapse-container>:first-child {
+	border-radius: 4px 4px 0px 0px;
+}
+
+.collapse-container>:nth-last-child(2) {
+	border-radius: 0px 0px 3px 3px;
+}
+
+.codeBlock {
+	background-color: lightGray;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 0px 10px;
+}
+  
+.collapse-container h1, .collapse-container h2, .collapse-container h3 {
+	color: #f9f9f9;
+	font-weight: bold;
+} 
+ 
